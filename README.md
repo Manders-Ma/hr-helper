@@ -18,11 +18,8 @@
    ```
    *預設運行於: http://localhost:3000*
 
-### 建構與部署
+### 建構
 - **生產環境建構**: `npm run build`
-- **GitHub Actions**: 
-  - 專案已配置預設的 CI 流程 (`.github/workflows/deploy.yml`)。
-  - 當推送 (Push) 或發送 PR 到 `main` 分支時，會自動執行套件安裝與建構驗證。
 
 ## 專案設定說明
 - **.gitignore**: 已排除 `node_modules`, `dist`, `.env` 等敏感與暫存檔案。
