@@ -1,20 +1,30 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# HR Helper - React Project
 
-# Run and deploy your AI Studio app
+這是一個使用 Vite 6 + React 19 + Tailwind CSS v4 打造的專案。
 
-This contains everything you need to run your app locally.
+## 快速開始
 
-View your app in AI Studio: https://ai.studio/apps/a79ece41-1020-4724-9e6a-325e756e2ebd
+### 環境需求
+- **Node.js**: >= v20.0.0 (建議使用 v24.x 或最新 LTS)
 
-## Run Locally
+### 本地開發
+1. 安裝套件：
+   ```bash
+   npm install
+   ```
+2. 啟動開發伺服器：
+   ```bash
+   npm run dev
+   ```
+   *預設運行於: http://localhost:3000*
 
-**Prerequisites:**  Node.js
+### 建構與部署
+- **生產環境建構**: `npm run build`
+- **GitHub Actions**: 
+  - 專案已配置預設的 CI 流程 (`.github/workflows/deploy.yml`)。
+  - 當推送 (Push) 或發送 PR 到 `main` 分支時，會自動執行套件安裝與建構驗證。
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 專案設定說明
+- **.gitignore**: 已排除 `node_modules`, `dist`, `.env` 等敏感與暫存檔案。
+- **TypeScript**: 使用 `tsconfig.json` 進行嚴格型別檢查。
+- **Styling**: 預設搭載 Tailwind CSS v4。
