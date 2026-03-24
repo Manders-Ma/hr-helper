@@ -1,0 +1,5 @@
+{
+  "name": "HR 獎品抽籤系統",
+  "description": "一個為 HR 設計的專業抽籤系統，支援 CSV 上傳與姓名貼上，具備流暢的抽籤動畫與重複抽取設定。",
+  "requestFramePermissions": []
+}
